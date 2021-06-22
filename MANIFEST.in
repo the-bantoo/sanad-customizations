@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include sanad_customisations *.css
+recursive-include sanad_customisations *.csv
+recursive-include sanad_customisations *.html
+recursive-include sanad_customisations *.ico
+recursive-include sanad_customisations *.js
+recursive-include sanad_customisations *.json
+recursive-include sanad_customisations *.md
+recursive-include sanad_customisations *.png
+recursive-include sanad_customisations *.py
+recursive-include sanad_customisations *.svg
+recursive-include sanad_customisations *.txt
+recursive-exclude sanad_customisations *.pyc
