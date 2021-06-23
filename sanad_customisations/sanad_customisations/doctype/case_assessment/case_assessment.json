@@ -1,0 +1,288 @@
+{
+ "actions": [],
+ "creation": "2021-06-22 11:11:19.282477",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "childs_information",
+  "childs_name",
+  "date_of_birth",
+  "the_transfer_was_made_from_a_hospital",
+  "receipt_date",
+  "childs_picture",
+  "column_break_5",
+  "file_number",
+  "child_nationality",
+  "treatment_period",
+  "study_date",
+  "attachments_section",
+  "research_form",
+  "medical_report",
+  "column_break_15",
+  "proof_of_family_and_pictures_of_the_child",
+  "proof_of_indebtedness",
+  "health_status_section",
+  "aware_since",
+  "column_break_20",
+  "duration",
+  "column_break_22",
+  "type_of_treatment",
+  "social_status",
+  "nationality",
+  "family_count",
+  "residence",
+  "address",
+  "type_of_rent",
+  "rent_per_month",
+  "column_break_29",
+  "salary_per_month",
+  "citizen_benefit_amount",
+  "family_income",
+  "bank_name",
+  "debt_deductions_per_month",
+  "deductions_continue_until",
+  "column_break_38",
+  "income_after_deductions",
+  "number_of_appointments",
+  "frequency_of_appointments",
+  "mode_of_transport"
+ ],
+ "fields": [
+  {
+   "fieldname": "childs_name",
+   "fieldtype": "Data",
+   "label": "Child\u2019s Full Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Child\u2019s Date of Birth"
+  },
+  {
+   "fieldname": "the_transfer_was_made_from_a_hospital",
+   "fieldtype": "Data",
+   "label": "The transfer was made from a hospital."
+  },
+  {
+   "fieldname": "receipt_date",
+   "fieldtype": "Date",
+   "label": "Status Receipt Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "file_number",
+   "fieldtype": "Data",
+   "label": "Medical file number"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "treatment_period",
+   "fieldtype": "Data",
+   "label": "Proposed Treatment Period"
+  },
+  {
+   "fieldname": "study_date",
+   "fieldtype": "Date",
+   "label": "Case Study Date"
+  },
+  {
+   "fieldname": "childs_picture",
+   "fieldtype": "Attach Image",
+   "label": "Child's Picture"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "research_form",
+   "fieldtype": "Attach",
+   "label": "Social Research Form:"
+  },
+  {
+   "fieldname": "medical_report",
+   "fieldtype": "Attach",
+   "label": "A new Arab Medical Report:"
+  },
+  {
+   "fieldname": "health_status_section",
+   "fieldtype": "Section Break",
+   "label": "The health status of the case:"
+  },
+  {
+   "fieldname": "aware_since",
+   "fieldtype": "Data",
+   "label": "The child has been aware of the disease for:"
+  },
+  {
+   "fieldname": "childs_information",
+   "fieldtype": "Section Break",
+   "label": "Childs Information"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "proof_of_family_and_pictures_of_the_child",
+   "fieldtype": "Attach",
+   "label": "Proof Of Family And Pictures Of The Child:"
+  },
+  {
+   "fieldname": "proof_of_indebtedness",
+   "fieldtype": "Attach",
+   "label": "Proof Of Indebtedness:"
+  },
+  {
+   "fieldname": "type_of_treatment",
+   "fieldtype": "Select",
+   "label": "The child is currently receiving:",
+   "options": "No Treatment\nChemical\nRadiological\nSurgical Intervention"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Select",
+   "label": "Duration",
+   "options": "Days\nWeeks\nMonths\nYears"
+  },
+  {
+   "fieldname": "social_status",
+   "fieldtype": "Section Break",
+   "label": "The social status of the family:"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "child_nationality",
+   "fieldtype": "Data",
+   "label": "Nationality/type of proof"
+  },
+  {
+   "fieldname": "family_count",
+   "fieldtype": "Data",
+   "label": "Number Of Family Members:"
+  },
+  {
+   "fieldname": "residence",
+   "fieldtype": "Select",
+   "label": "Residence",
+   "options": "Apartment\nPopular House"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Home Address"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rent_per_month",
+   "fieldtype": "Currency",
+   "label": "Annual Rent Per Month:"
+  },
+  {
+   "fieldname": "type_of_rent",
+   "fieldtype": "Select",
+   "label": "Type Of Rent",
+   "options": "Daily\nMonthly"
+  },
+  {
+   "fieldname": "salary_per_month",
+   "fieldtype": "Currency",
+   "label": "Salary Per Month"
+  },
+  {
+   "fieldname": "citizen_benefit_amount",
+   "fieldtype": "Currency",
+   "label": "Citizen Benefit Amount"
+  },
+  {
+   "description": "(in case the mother has an income mentioned here)",
+   "fieldname": "family_income",
+   "fieldtype": "Currency",
+   "label": "Family Income"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "debt_deductions_per_month",
+   "fieldtype": "Currency",
+   "label": "Debt Deductions Per Month"
+  },
+  {
+   "fieldname": "deductions_continue_until",
+   "fieldtype": "Date",
+   "label": "Deductions Continue Until"
+  },
+  {
+   "fieldname": "income_after_deductions",
+   "fieldtype": "Currency",
+   "label": "Income After Deductions"
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_appointments",
+   "fieldtype": "Data",
+   "label": "Number Of Appointments"
+  },
+  {
+   "fieldname": "frequency_of_appointments",
+   "fieldtype": "Select",
+   "label": "Frequency Of Appointments",
+   "options": "Weekly\nMonthly\nYearly"
+  },
+  {
+   "fieldname": "mode_of_transport",
+   "fieldtype": "Select",
+   "label": "Mode Of Transport",
+   "options": "Private\nPublic"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-06-22 18:03:59.724950",
+ "modified_by": "Administrator",
+ "module": "Sanad Customisations",
+ "name": "Case Assessment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
