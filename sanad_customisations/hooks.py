@@ -149,7 +149,7 @@ fixtures = [
     "filters": [
       [
         "name", "in", [
-          "Case Assessment",
+          "case-assessment",
         ]
       ]
     ]
