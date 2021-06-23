@@ -143,3 +143,16 @@ app_license = "MIT"
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
 
+fixtures = [
+  {
+    "dt": "Web Form",
+    "filters": [
+      [
+        "name", "in", [
+          "Case Assessment",
+        ]
+      ]
+    ]
+
+  },
+]
