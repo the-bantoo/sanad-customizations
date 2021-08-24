@@ -1,0 +1,25 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Cost",
+   "width": "Half"
+  },
+  {
+   "chart": "Cost",
+   "width": "Half"
+  }
+ ],
+ "creation": "2021-08-18 16:12:54.963491",
+ "dashboard_name": "Cost",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2021-08-18 16:22:02.596139",
+ "modified_by": "Administrator",
+ "module": "Sanad Customisations",
+ "name": "Cost",
+ "owner": "Administrator"
+}

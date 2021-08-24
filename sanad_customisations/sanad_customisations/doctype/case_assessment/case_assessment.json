@@ -1,13 +1,16 @@
 {
  "actions": [],
+ "autoname": "naming_series:",
  "creation": "2021-06-22 11:11:19.282477",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "childs_information",
+  "status",
   "childs_name",
   "date_of_birth",
+  "childs_id",
   "the_transfer_was_made_from_a_hospital",
   "receipt_date",
   "childs_picture",
@@ -16,6 +19,7 @@
   "child_nationality",
   "treatment_period",
   "study_date",
+  "contact_number",
   "attachments_section",
   "research_form",
   "medical_report",
@@ -46,7 +50,9 @@
   "income_after_deductions",
   "number_of_appointments",
   "frequency_of_appointments",
-  "mode_of_transport"
+  "mode_of_transport",
+  "amended_from",
+  "naming_series"
  ],
  "fields": [
   {
@@ -61,8 +67,9 @@
   },
   {
    "fieldname": "the_transfer_was_made_from_a_hospital",
-   "fieldtype": "Data",
-   "label": "The transfer was made from a hospital."
+   "fieldtype": "Select",
+   "label": "The transfer was made from a hospital.",
+   "options": "\u0645\u0633\u062a\u0634\u0641\u0649 \u0627\u0644\u0645\u062f\u064a\u0646\u0629 \u0644\u0644\u0646\u0633\u0627\u0621 \u0648\u0627\u0644\u0648\u0644\u0627\u062f\u0629 \u0648\u0627\u0644\u0627\u0637\u0641\u0627\u0644\n\u0645\u062f\u064a\u0646\u0629 \u0627\u0644\u0645\u0644\u0643 \u0639\u0628\u062f\u0627\u0644\u0639\u0632\u064a\u0632 \u0627\u0644\u0637\u0628\u064a\u0629 \u0628\u0627\u0644\u062d\u0631\u0633 \u0627\u0644\u0648\u0637\u0646\u064a \u0628\u062c\u062f\u0629\n\u0645\u0631\u0643\u0632 \u0627\u0644\u0645\u0644\u0643 \u0641\u0647\u062f \u0627\u0644\u0648\u0637\u0646\u064a \u0644\u0623\u0648\u0631\u0627\u0645 \u0627\u0644\u0623\u0637\u0641\u0627\u0644\n\u0645\u0633\u062a\u0634\u0641\u0649 \u0627\u0644\u0645\u0644\u0643 \u062e\u0627\u0644\u062f \u0627\u0644\u062c\u0627\u0645\u0639\u064a\n\u0645\u0633\u062a\u0634\u0641\u0649 \u0627\u0644\u0645\u0644\u0643 \u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0627\u0644\u062a\u062e\u0635\u0635\u064a \u0644\u0644\u0623\u0637\u0641\u0627\u0644 \u0628\u0627\u0644\u062d\u0631\u0633 \u0627\u0644\u0648\u0637\u0646\u064a\n\u0645\u062f\u064a\u0646\u0629 \u0627\u0644\u0645\u0644\u0643 \u0641\u0647\u062f \u0627\u0644\u0637\u0628\u064a\u0629\n\u0645\u0633\u062a\u0634\u0641\u0649 \u062c\u0627\u0645\u0639\u0629 \u0627\u0644\u0645\u0644\u0643 \u0639\u0628\u062f\u0627\u0644\u0639\u0632\u064a\u0632\n\u0645\u0633\u062a\u0634\u0641\u0649 \u0627\u0644\u0645\u0644\u0643 \u0641\u064a\u0635\u0644 \u0627\u0644\u062a\u062e\u0635\u0635\u064a\n\u0645\u0631\u0643\u0632 \u0627\u0644\u0623\u0645\u064a\u0631 \u0641\u064a\u0635\u0644 \u0628\u0646 \u0628\u0646\u062f\u0631 \u0644\u0644\u0623\u0648\u0631\u0627\u0645\n\u0645\u062f\u064a\u0646\u0629 \u0627\u0644\u0645\u0644\u0643 \u0633\u0639\u0648\u062f \u0627\u0644\u0637\u0628\u064a\u0629\n\u0645\u0633\u062a\u0634\u0641\u0649 \u0627\u0644\u0645\u0644\u0643 \u0641\u064a\u0635\u0644 \u0627\u0644\u062a\u062e\u0635\u0635\u064a \u0648\u0645\u0631\u0643\u0632 \u0627\u0644\u0623\u0628\u062d\u0627\u062b\n\u0645\u0633\u062a\u0634\u0641\u0649 \u0627\u0644\u0645\u0644\u0643 \u0641\u0647\u062f \u0627\u0644\u062a\u062e\u0635\u0635\u064a\n\u0645\u062f\u064a\u0646\u0629 \u0627\u0644\u0623\u0645\u064a\u0631 \u0633\u0644\u0637\u0627\u0646 \u0627\u0644\u0637\u0628\u064a\u0629 \u0627\u0644\u0639\u0633\u0643\u0631\u064a\u0629"
   },
   {
    "fieldname": "receipt_date",
@@ -99,6 +106,7 @@
    "label": "Child's Picture"
   },
   {
+   "bold": 1,
    "fieldname": "attachments_section",
    "fieldtype": "Section Break",
    "label": "Attachments"
@@ -124,8 +132,10 @@
    "label": "The child has been aware of the disease for:"
   },
   {
+   "bold": 1,
    "fieldname": "childs_information",
    "fieldtype": "Section Break",
+   "in_preview": 1,
    "label": "Childs Information"
   },
   {
@@ -259,14 +269,53 @@
    "fieldtype": "Select",
    "label": "Mode Of Transport",
    "options": "Private\nPublic"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Case Assessment",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CAS-ASMT-.YYYY.-"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "status "
+  },
+  {
+   "fieldname": "childs_id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Child\u2019s ID"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Int",
+   "label": "Contact Number"
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2021-06-22 18:03:59.724950",
+ "is_submittable": 1,
+ "links": [
+  {
+   "group": "connection",
+   "link_doctype": "Wish",
+   "link_fieldname": "naming_series"
+  }
+ ],
+ "modified": "2021-08-19 09:09:44.236314",
  "modified_by": "Administrator",
  "module": "Sanad Customisations",
  "name": "Case Assessment",
+ "name_case": "UPPER CASE",
  "owner": "Administrator",
  "permissions": [
   {
@@ -284,5 +333,7 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "track_changes": 1
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }
